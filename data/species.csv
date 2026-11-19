@@ -1,0 +1,21 @@
+species_id,name_en,name_ja,scientific_name,guild,taxon_note
+shiitake,Shiitake,シイタケ,Lentinula edodes,white-rot wood decayer,
+maitake,Maitake,マイタケ,Grifola frondosa,white-rot root/butt decayer,
+kuritake,Kuritake (brick cap),クリタケ,Hypholoma lateritium,white-rot wood decayer,syn. H. sublateritium
+lions-mane,Lion's mane,ヤマブシタケ,Hericium erinaceus,white-rot wood decayer,North American trials sometimes use H. americanum
+hiratake,Oyster mushroom,ヒラタケ,Pleurotus ostreatus,white-rot wood decayer,
+italian-oyster,Italian oyster,ウスヒラタケ,Pleurotus pulmonarius,white-rot wood decayer,sold as P. sajor-caju in some markets
+golden-oyster,Golden oyster,タモギタケ,Pleurotus citrinopileatus,white-rot wood decayer,
+eringi,King oyster,エリンギ,Pleurotus eryngii,weak parasite / saprotroph of Apiaceae roots,
+nameko,Nameko,ナメコ,Pholiota microspora,white-rot wood decayer,syn. P. nameko
+mukitake,Mukitake,ムキタケ,Sarcomyxa edulis,white-rot wood decayer,S. serotina is the bitter look-alike
+enoki,Enoki,エノキタケ,Flammulina filiformis,white-rot wood decayer,East Asian enoki; European F. velutipes is a separate species
+buna-shimeji,Buna-shimeji,ブナシメジ,Hypsizygus marmoreus,white-rot wood decayer,
+chestnut-mushroom,Chestnut mushroom,ヌメリスギタケ(モドキ),Pholiota adiposa (complex),white-rot wood decayer,Japanese name unresolved within the complex
+reishi,Reishi,マンネンタケ,Ganoderma lingzhi,white-rot wood decayer,older Japanese literature calls it G. lucidum
+turkey-tail,Turkey tail,カワラタケ,Trametes versicolor,white-rot wood decayer,
+kikurage,Wood ear,キクラゲ / アラゲキクラゲ,Auricularia heimuer / A. cornea,wood decayer,Japanese log trials in this dataset use A. cornea (アラゲキクラゲ); results may not transfer to A. heimuer
+chicken-of-the-woods,Chicken of the woods,マスタケ (Japanese relative),Laetiporus sp.,brown-rot wood decayer,project strain is North American; Japanese Laetiporus are different species (Banik et al. 2010)
+shaggy-ink-cap,Shaggy ink cap,ササクレヒトヨタケ,Coprinus comatus,litter / soil saprotroph,
+cordyceps-militaris,Scarlet caterpillar club,サナギタケ,Cordyceps militaris,entomopathogen (Lepidoptera pupae),
+cordyceps-cicadae,Cicada flower,ツクツクボウシタケ (relative),Cordyceps chanhua,entomopathogen (cicada nymphs),syn. C. cicadae / Isaria cicadae

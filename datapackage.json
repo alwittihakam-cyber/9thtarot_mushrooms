@@ -1,0 +1,499 @@
+{
+  "name": "tanzawa-mushroom-substrates",
+  "title": "Evidence-graded species × substrate matching for log-culture mushrooms",
+  "licenses": [
+    {
+      "name": "CC-BY-NC-SA-4.0",
+      "path": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+      "title": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0"
+    }
+  ],
+  "resources": [
+    {
+      "name": "species",
+      "path": "data/species.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "schema": {
+        "primaryKey": "species_id",
+        "fields": [
+          {
+            "name": "species_id",
+            "type": "string",
+            "description": "Stable slug",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "name_en",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "name_ja",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "scientific_name",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "guild",
+            "type": "string",
+            "description": "Ecological role"
+          },
+          {
+            "name": "taxon_note",
+            "type": "string",
+            "description": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "substrates",
+      "path": "data/substrates.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "schema": {
+        "primaryKey": "substrate_id",
+        "fields": [
+          {
+            "name": "substrate_id",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "name_en",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "name_ja",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "taxon",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "family",
+            "type": "string",
+            "description": "APG IV family for plants"
+          },
+          {
+            "name": "category",
+            "type": "string",
+            "description": "Wood anatomy or non-wood class",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "native_kanagawa",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "project_access",
+            "type": "string",
+            "description": "Whether the project can get this substrate",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "have",
+                "maybe",
+                "plan",
+                "no",
+                "unknown",
+                "have (wild)"
+              ]
+            }
+          },
+          {
+            "name": "ecm_host",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "enum": [
+                "yes",
+                "no"
+              ]
+            }
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "sources",
+      "path": "data/sources.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "schema": {
+        "primaryKey": "source_id",
+        "fields": [
+          {
+            "name": "source_id",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "citation",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "year",
+            "type": "integer",
+            "description": ""
+          },
+          {
+            "name": "source_kind",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "peer-reviewed",
+                "prefectural-report",
+                "extension-guide",
+                "specimen-record",
+                "project-record",
+                "extrapolation"
+              ]
+            }
+          },
+          {
+            "name": "doi",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "url",
+            "type": "string",
+            "description": "",
+            "format": "uri"
+          },
+          {
+            "name": "language",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "verified",
+            "type": "string",
+            "description": "Date the claim was re-read against the source, \"partial\", \"no\", \"owner\" or \"n/a\""
+          },
+          {
+            "name": "verified_note",
+            "type": "string",
+            "description": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "evidence",
+      "path": "data/evidence.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "schema": {
+        "primaryKey": "claim_id",
+        "foreignKeys": [
+          {
+            "fields": "species_id",
+            "reference": {
+              "resource": "species",
+              "fields": "species_id"
+            }
+          },
+          {
+            "fields": "substrate_id",
+            "reference": {
+              "resource": "substrates",
+              "fields": "substrate_id"
+            }
+          },
+          {
+            "fields": "source_id",
+            "reference": {
+              "resource": "sources",
+              "fields": "source_id"
+            }
+          }
+        ],
+        "fields": [
+          {
+            "name": "claim_id",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            },
+            "pattern": "^EV\\d{4}$"
+          },
+          {
+            "name": "species_id",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "substrate_id",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "substrate_as_reported",
+            "type": "string",
+            "description": "Exact taxon or material as written in the source"
+          },
+          {
+            "name": "substrate_form",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "enum": [
+                "log",
+                "short-log",
+                "sawdust-bed",
+                "bag-mix",
+                "buried-root",
+                "insect",
+                "natural host",
+                "stump"
+              ]
+            }
+          },
+          {
+            "name": "study_type",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "replicated-trial",
+                "single-trial",
+                "guide-rating",
+                "pilot",
+                "host-record",
+                "extrapolation"
+              ]
+            }
+          },
+          {
+            "name": "metric_class",
+            "type": "string",
+            "description": "Only production claims enter the suitability matrix",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "production",
+                "colonisation",
+                "quality",
+                "host-record"
+              ]
+            }
+          },
+          {
+            "name": "evidence_level",
+            "type": "integer",
+            "description": "E1 replicated trial with statistics; E2 single trial or report; E3 guide rating or grower report; E4 project pilot; E5 extrapolation",
+            "constraints": {
+              "required": true,
+              "enum": [
+                1,
+                2,
+                3,
+                4,
+                5
+              ]
+            }
+          },
+          {
+            "name": "outcome",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "excellent",
+                "good",
+                "marginal",
+                "poor",
+                "none",
+                "fruited-unquantified",
+                "colonised",
+                "host"
+              ]
+            }
+          },
+          {
+            "name": "outcome_basis",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "enum": [
+                "measured",
+                "rank-only",
+                "rating",
+                "reported",
+                "estimated",
+                "reference",
+                "expected"
+              ]
+            }
+          },
+          {
+            "name": "metric",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "value",
+            "type": "string",
+            "description": "As reported; free text to keep ranges and qualifiers"
+          },
+          {
+            "name": "unit",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "comparator",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "n_units",
+            "type": "string",
+            "description": "Logs, bags, replicates or strains as reported"
+          },
+          {
+            "name": "duration",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "region",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "source_id",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "locator",
+            "type": "string",
+            "description": "Table, figure or section in the source"
+          },
+          {
+            "name": "taxon_caveat",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "notes",
+            "type": "string",
+            "description": ""
+          }
+        ]
+      }
+    },
+    {
+      "name": "plan_assignments",
+      "path": "data/plan_assignments.csv",
+      "format": "csv",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "species_id",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "substrate_id",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "required": true
+            }
+          },
+          {
+            "name": "role",
+            "type": "string",
+            "description": "",
+            "constraints": {
+              "enum": [
+                "now",
+                "later"
+              ]
+            }
+          },
+          {
+            "name": "plan_grade",
+            "type": "string",
+            "description": "Grade given in the project plan; NOT evidence"
+          },
+          {
+            "name": "logs_planned",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "plan_source",
+            "type": "string",
+            "description": ""
+          },
+          {
+            "name": "note",
+            "type": "string",
+            "description": ""
+          }
+        ]
+      }
+    }
+  ]
+}

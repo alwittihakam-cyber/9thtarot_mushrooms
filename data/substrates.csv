@@ -1,0 +1,53 @@
+substrate_id,name_en,name_ja,taxon,family,category,native_kanagawa,project_access,ecm_host,notes
+konara,Konara oak,コナラ,Quercus serrata,Fagaceae,hardwood-ring-porous,yes,have,yes,Core project wood (wild and bought). Oak wilt (ナラ枯れ) risk: never move logs from wilted trees.
+kunugi,Sawtooth oak,クヌギ,Quercus acutissima,Fagaceae,hardwood-ring-porous,yes (old coppice / planted),maybe,yes,Planned long-term shiitake wood. Oak wilt risk.
+quercus-deciduous-other,Other deciduous oaks,ナラガシワ ほか,"Quercus aliena, Q. alba, unspecified Quercus",Fagaceae,hardwood-ring-porous,mixed,no,yes,Grouping for oak results from other species or unspecified oaks; check substrate_as_reported in evidence.csv
+quercus-evergreen,Evergreen oaks,アラカシ・シラカシ・イチイガシ,"Quercus glauca, Q. myrsinifolia, Q. gilva",Fagaceae,hardwood-radial-porous,yes,no,yes,Results differ sharply between species in this group; see evidence.csv
+castanopsis,Chinquapin,ツブラジイ・スダジイ,"Castanopsis cuspidata, C. sieboldii",Fagaceae,hardwood-ring-porous,yes,no,yes,
+lithocarpus,Japanese stone oak,マテバシイ,Lithocarpus edulis,Fagaceae,hardwood-radial-porous,planted,no,yes,
+castanea,Chestnut,クリ,Castanea spp.,Fagaceae,hardwood-ring-porous,yes,no,yes,
+fagus,Beech,ブナ,Fagus spp.,Fagaceae,hardwood-diffuse-porous,yes (montane),no,yes,
+carpinus,Hornbeam,イヌシデ・アカシデ,"Carpinus tschonoskii, C. laxiflora",Betulaceae,hardwood-diffuse-porous,yes,have,yes,
+ostrya,Hop-hornbeam,アサダ,Ostrya japonica,Betulaceae,hardwood-diffuse-porous,yes,have,yes,No mushroom trial found for any project species
+alnus,Alder,オオバヤシャブシ・ハンノキ,"Alnus sieboldiana, A. japonica, Alnus spp.",Betulaceae,hardwood-diffuse-porous,yes,no,yes,
+betula,Birch,カバノキ類,Betula spp.,Betulaceae,hardwood-diffuse-porous,yes (montane),no,yes,
+cerasus,Cherry,ヤマザクラ・カスミザクラ ほか,"Cerasus jamasakura, C. leveilleana, Cerasus spp.",Rosaceae,hardwood-diffuse-porous,yes,plan,no,Project nameko wood; not all cherries behave alike (see padus)
+padus,Bird cherry,ウワミズザクラ,Padus grayana,Rosaceae,hardwood-diffuse-porous,yes,no,no,
+prunus-mume,Ume,ウメ,Prunus mume,Rosaceae,hardwood-diffuse-porous,cultivated,plan,no,Project reishi wood (from prunings)
+salix,Willow,ヤナギ類,Salix spp.,Salicaceae,hardwood-diffuse-porous,yes,no,no,Prefecture clears it from the Kaname River channel
+populus,Poplar,ポプラ類,Populus spp.,Salicaceae,hardwood-diffuse-porous,planted,no,no,
+ulmus,Elm,ニレ類,Ulmus spp.,Ulmaceae,hardwood-ring-porous,yes,no,no,
+zelkova,Zelkova,ケヤキ,Zelkova serrata,Ulmaceae,hardwood-ring-porous,yes,no,no,Same family as elm
+celtis,Chinese hackberry,エノキ,Celtis sinensis,Cannabaceae,hardwood-ring-porous,yes,have,no,"Formerly placed in Ulmaceae; now Cannabaceae (APG IV), so a more distant relative of elm than zelkova"
+aphananthe,Muku tree,ムクノキ,Aphananthe aspera,Cannabaceae,hardwood-diffuse-porous,yes,no,no,
+mallotus,Japanese mallotus,アカメガシワ,Mallotus japonicus,Euphorbiaceae,hardwood-diffuse-porous,yes,no,no,Pioneer on riverbanks and clearings
+cornus,Dogwood,ミズキ・クマノミズキ,"Cornus controversa, C. macrophylla",Cornaceae,hardwood-diffuse-porous,yes,no,no,
+machilus,Machilus,タイワンイヌグス・タブノキ,Machilus spp.,Lauraceae,hardwood-diffuse-porous,yes (タブノキ),no,no,
+cinnamomum,Japanese cinnamon,ヤブニッケイ,Cinnamomum yabunikkei,Lauraceae,hardwood-diffuse-porous,yes,have,no,"If the project's ""cinnamon"" is camphor (クスノキ, C. camphora) expect stronger antifungal oils; confirm the species"
+liquidambar,Sweetgum,フウ・タイワンフウ,"Liquidambar formosana, L. styraciflua",Altingiaceae,hardwood-diffuse-porous,planted,no,no,
+acer,Maple,イロハモミジ・イタヤカエデ,"Acer palmatum, A. pictum, A. rubrum",Sapindaceae,hardwood-diffuse-porous,yes,have,no,Project access is イロハモミジ; trial data are for other Acer species
+tilia,Linden,シナノキ・オオバボダイジュ,Tilia spp.,Malvaceae,hardwood-diffuse-porous,yes (montane),no,no,
+robinia,Black locust,ニセアカシア,Robinia pseudoacacia,Fabaceae,hardwood-ring-porous,naturalised (invasive),no,no,
+ailanthus,Tree of heaven,ニワウルシ,Ailanthus altissima,Simaroubaceae,hardwood-ring-porous,naturalised,no,no,
+stewartia,Stewartia,ヒメシャラ,Stewartia monadelpha,Theaceae,hardwood-diffuse-porous,yes,no,no,
+fraxinus,Ash,アオダモ,Fraxinus lanuginosa,Oleaceae,hardwood-ring-porous,yes,no,no,
+styrax,Snowbell,ハクウンボク,Styrax obassia,Styracaceae,hardwood-diffuse-porous,yes,no,no,
+magnolia,Japanese bigleaf magnolia,ホオノキ,Magnolia obovata,Magnoliaceae,hardwood-diffuse-porous,yes,no,no,
+aesculus,Horse chestnut,トチノキ,Aesculus turbinata,Sapindaceae,hardwood-diffuse-porous,yes,no,no,
+elaeocarpus,Elaeocarpus,ホルトノキ,Elaeocarpus zollingeri,Elaeocarpaceae,hardwood-diffuse-porous,yes,no,no,
+sugi,Japanese cedar,スギ,Cryptomeria japonica,Cupressaceae,conifer,yes (plantation),have,no,
+hinoki,Hinoki cypress,ヒノキ,Chamaecyparis obtusa,Cupressaceae,conifer,yes (plantation),no,no,
+daucus-root,Fresh carrot root,ニンジン,Daucus carota,Apiaceae,non-wood: root,cultivated,have,no,Fresh and unsterilised in the project method
+apiaceae-wild,Wild Apiaceae roots,セリ科,Eryngium and other Apiaceae,Apiaceae,non-wood: root,mixed,no,no,Natural host of P. eryngii
+bamboo-sawdust,Bamboo sawdust,竹粉,Phyllostachys etc.,Poaceae,non-wood: grass,yes,unknown,no,
+spent-substrate,Spent mushroom substrate,廃菌床,mixed,n/a,non-wood: recycled,n/a,unknown,no,
+cereal-straw,Cereal straw,稲わら・麦わら,mixed,Poaceae,non-wood: straw,n/a,unknown,no,
+corn-cob-mix,Corn cob mix,コーンコブ,Zea mays residue,Poaceae,non-wood: agri-residue,n/a,unknown,no,
+bagasse-manure,Bagasse + manure,バガス・堆肥,mixed,n/a,non-wood: agri-residue,n/a,unknown,no,
+compost-mix,Sawdust / agri-residue mix with casing,堆肥・覆土,mixed,n/a,non-wood: compost,n/a,unknown,no,
+silkworm-pupae,Silkworm pupae,カイコ蛹,Bombyx mori,Bombycidae,insect host,cultivated,unknown,no,
+beetle-larvae,Rhinoceros beetle larvae,カブトムシ幼虫,Allomyrina dichotoma,Scarabaeidae,insect host,yes,unknown,no,
+antheraea-pupae,Oak silkmoth pupae,サクサン蛹,Antheraea pernyi,Saturniidae,insect host,no (Japanese relative A. yamamai is native),unknown,no,
+cicada-nymph,Cicada nymphs,セミ幼虫,Cicadidae,Cicadidae,insect host,yes,have (wild),no,
+sambucus,Elder,ニワトコ,Sambucus racemosa subsp. sieboldiana,Viburnaceae,hardwood-diffuse-porous,yes,no,no,Toxic to dogs; the project has a dog
+morus,Mulberry,クワ,Morus spp.,Moraceae,hardwood-ring-porous,yes,no,no,

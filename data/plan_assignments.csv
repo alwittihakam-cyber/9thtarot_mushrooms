@@ -1,0 +1,43 @@
+species_id,substrate_id,role,plan_grade,logs_planned,plan_source,note
+shiitake,konara,now,A,70,Log Yard Plan v2,
+shiitake,kunugi,later,A,,Log Yard Plan v2,
+maitake,konara,now,A,12 + stumps,Log Yard Plan v2,stump mimics
+maitake,kunugi,later,,,Log Yard Plan v2,
+kuritake,konara,now,A,10 + stumps,Log Yard Plan v2,
+kuritake,kunugi,later,,,Log Yard Plan v2,
+kuritake,castanea,later,,,Log Yard Plan v2,
+lions-mane,konara,now,A,12,Log Yard Plan v2,
+lions-mane,fagus,later,,,Log Yard Plan v2,
+hiratake,cerasus,now,A,10,Log Yard Plan v2,
+hiratake,salix,later,,,Log Yard Plan v2,native willow
+italian-oyster,cerasus,now,A,8,Log Yard Plan v2,
+italian-oyster,salix,later,,,Log Yard Plan v2,native willow
+golden-oyster,cerasus,now,B,4,Log Yard Plan v2,
+golden-oyster,ulmus,later,,,Log Yard Plan v2,
+eringi,daucus-root,now,,bed,Log Yard Plan v2,fresh carrots in soil
+eringi,apiaceae-wild,later,,,Log Yard Plan v2,native umbellifer bed
+nameko,cerasus,now,A,15,Log Yard Plan v2,
+nameko,fagus,later,,,Log Yard Plan v2,
+mukitake,cerasus,now,B,8,Log Yard Plan v2,
+mukitake,fagus,later,,,Log Yard Plan v2,
+mukitake,acer,later,,,Log Yard Plan v2,itaya-kaede
+enoki,cerasus,now,B,10,Log Yard Plan v2,
+enoki,celtis,later,,,Log Yard Plan v2,
+buna-shimeji,konara,now,B,8,Log Yard Plan v2,based on the project's own result
+buna-shimeji,fagus,later,,,Log Yard Plan v2,
+chestnut-mushroom,konara,now,B,8,Log Yard Plan v2,
+chestnut-mushroom,cerasus,now,B,,Log Yard Plan v2,
+chestnut-mushroom,salix,later,,,Log Yard Plan v2,native willow
+reishi,prunus-mume,now,A,25,Log Yard Plan v2,
+turkey-tail,konara,now,A,6,Log Yard Plan v2,
+turkey-tail,cerasus,now,A,,Log Yard Plan v2,
+kikurage,konara,now,B,10,Log Yard Plan v2,
+kikurage,cerasus,now,B,,Log Yard Plan v2,
+kikurage,sambucus,later,,,Log Yard Plan v2,elder: toxic to dogs
+kikurage,morus,later,,,Log Yard Plan v2,
+chicken-of-the-woods,konara,now,A,6,Log Yard Plan v2,
+chicken-of-the-woods,cerasus,now,A,,Log Yard Plan v2,
+chicken-of-the-woods,kunugi,later,,,Log Yard Plan v2,large kunugi
+shaggy-ink-cap,compost-mix,now,,patch,Log Yard Plan v2,litter and compost
+cordyceps-militaris,silkworm-pupae,now,,,Log Yard Plan v2,wild moth pupae primary
+cordyceps-cicadae,cicada-nymph,now,,,Log Yard Plan v2,
