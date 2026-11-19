@@ -12,7 +12,7 @@
 OBS-01 gives three things to test: it fruited, it tasted meatier, and the caps looked unusual. None is yet a finding:
 
 1. The kit pieces may have fruited **by themselves**, and the carrot may have added nothing.
-2. "Meatier" came from an informal 5-person tasting against supermarket eringi, which differed in strain, freshness, maturity and growing system as well as substrate. Blinding was not recorded.
+2. "Meatier" came from an informal 5-person tasting against supermarket eringi, which differed in strain, freshness, maturity and growing system as well as substrate. Four of the five tasters were blind; the grower, who served, was not.
 3. Broad, streaked caps may come from **light and air**, not from the carrot.
 
 ## 2. Hypotheses

@@ -40,7 +40,7 @@ Protocol P02 tests 1 and 2 with a shade and humidity cover (§P02.6). Some of th
 
 > "The taste of them is more meaty." (Hakam, 2026-11-19)
 
-Five people tasted the carrot eringi against **store-bought Japanese supermarket eringi** (corrected 2026-11-19: first recorded as one taster comparing with memory). Not recorded: whether tasters knew which sample was which, the cooking method, how many of the five agreed, and any scores.
+Five people tasted the carrot eringi against **store-bought Japanese supermarket eringi** (corrected 2026-11-19: first recorded as one taster comparing with memory). **Four of the five were blind** to which sample was which. The fifth, Hakam, knew, and served the samples, so this was single-blind. Not recorded: the cooking method, how many of the five agreed, and any scores.
 
 The comparison differs in much more than carrot: **strain** (supermarket strain unknown), **freshness** (hours vs days from harvest), **maturity** (broad mature caps vs young small caps) and **growing system** (outdoor casing vs indoor sterile bottle or bag). It is **a hypothesis, not a finding**. Protocol P02 tests it blind, against kit-only eringi and against commercial eringi of the same strain, and chemically, through glutamate, 5′-GMP and EUC.
 
