@@ -4,7 +4,7 @@
 
 ## Method, as done
 
-* Fresh carrots were pulled, skinned (peeled), had leaves and stems removed, were inoculated with pieces of a commercial eringi kit block, and were buried in a **pot filled with straw and leaf litter**.
+* Fresh carrots were pulled, skinned (peeled), had leaves and stems removed, and were buried in a **pot filled with straw and leaf litter** together with the broken-up substrate block of a **森産業 (Mori Sangyo) eringi kit**.
 * They were **not dried or sterilised.** The only prior use of carrot the project knows of used dried, sterilised carrot as an additive.
 * A casing of straw plus leaf litter was laid over the bed to keep CO₂ high around the developing pins.
 * No controls were run: no kit pieces without carrot, and no carrot without inoculum.
