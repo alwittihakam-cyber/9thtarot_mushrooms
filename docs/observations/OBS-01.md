@@ -36,11 +36,13 @@
 
 Protocol P02 tests 1 and 2 with a shade and humidity cover (§P02.6). Some of the round, rough-capped mushrooms in the tray photo may be shiitake from the logs; that has not been confirmed.
 
-## Taste (grower's note, unblinded)
+## Taste (informal 5-person comparison)
 
 > "The taste of them is more meaty." (Hakam, 2026-11-19)
 
-This is one taster, comparing against memory, who knew which mushroom was which. It is **a hypothesis, not a finding**. Protocol P02 tests it blind, against eringi from kit pieces alone and against commercial eringi of the same strain. It also tests it chemically, through glutamate, 5′-GMP and EUC.
+Five people tasted the carrot eringi against **store-bought Japanese supermarket eringi** (corrected 2026-11-19: first recorded as one taster comparing with memory). Not recorded: whether tasters knew which sample was which, the cooking method, how many of the five agreed, and any scores.
+
+The comparison differs in much more than carrot: **strain** (supermarket strain unknown), **freshness** (hours vs days from harvest), **maturity** (broad mature caps vs young small caps) and **growing system** (outdoor casing vs indoor sterile bottle or bag). It is **a hypothesis, not a finding**. Protocol P02 tests it blind, against kit-only eringi and against commercial eringi of the same strain, and chemically, through glutamate, 5′-GMP and EUC.
 
 ## Method change from 2026-11-19: spore slurry, then liquid culture
 

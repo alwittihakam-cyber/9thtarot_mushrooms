@@ -4,7 +4,7 @@
 |---|---|
 | Status | **Proposed, not adopted.** Needs Hakam's yes before it is frozen. |
 | Season | Inoculate in spring 2027 (Mar to Apr). A second cohort can follow in autumn 2027. |
-| Builds on | [OBS-01](../docs/observations/OBS-01.md). The pilot fruited to a full harvest by 2026-11-19 (EV0121), and the grower noted it was "more meaty" in an unblinded tasting (EV0153). Eringi grown on willow sawdust scored best for taste and texture against birch and corncob (EV0142), so substrate can change eringi quality. Eringi is naturally a weak parasite of Apiaceae roots (EV0116), and carrot is an Apiaceae. |
+| Builds on | [OBS-01](../docs/observations/OBS-01.md). The pilot fruited to a full harvest by 2026-11-19 (EV0121), and five tasters found it "more meaty" than supermarket eringi in an informal comparison (EV0153). Eringi grown on willow sawdust scored best for taste and texture against birch and corncob (EV0142), so substrate can change eringi quality. Eringi is naturally a weak parasite of Apiaceae roots (EV0116), and carrot is an Apiaceae. |
 | Outcomes | Culinary quality and chemical potency. Yield is not measured. |
 
 ## 1. Why this trial
@@ -12,7 +12,7 @@
 OBS-01 gives three things to test: it fruited, it tasted meatier, and the caps looked unusual. None is yet a finding:
 
 1. The kit pieces may have fruited **by themselves**, and the carrot may have added nothing.
-2. "Meatier" came from one taster who knew what they were eating and compared it with memory.
+2. "Meatier" came from an informal 5-person tasting against supermarket eringi, which differed in strain, freshness, maturity and growing system as well as substrate. Blinding was not recorded.
 3. Broad, streaked caps may come from **light and air**, not from the carrot.
 
 ## 2. Hypotheses

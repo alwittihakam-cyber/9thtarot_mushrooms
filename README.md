@@ -50,9 +50,11 @@ The farm sells on **culinary quality** and **chemical potency** (β-glucan, ergo
 
 <img src="docs/observations/OBS-01/2026-11-19_cap-streaks-in-bed.jpg" width="360" alt="Eringi cap with dark radial zebra streaks, growing through straw and leaf casing">
 
-Pieces of a commercial eringi kit, pushed into **fresh, unsterilised carrots** and buried again under a straw and leaf-litter casing, pinned on 2026-11-11 and gave a full tray by 2026-11-19. Every published use of carrot for eringi used it dried and sterilised, and eringi failed on all six log woods in Aichi. The caps are broad and flat with **dark radial "zebra" streaks**, nothing like indoor eringi, and the grower found them **"more meaty"**.
+Pieces of a commercial eringi kit, pushed into **fresh, unsterilised carrots** and buried again under a straw and leaf-litter casing, pinned on 2026-11-11 and gave a full tray by 2026-11-19. We found no report of eringi on fresh carrot (only dried, sterilised carrot as an additive), and eringi failed on all six log woods in Aichi. The caps are broad and flat with **dark radial "zebra" streaks**, nothing like indoor eringi, and in an informal tasting five people found them **"more meaty"** than supermarket eringi.
 
-That is one bed, one unblinded taster and no controls, so it is graded E4: a hypothesis, not a finding. [P02](protocols/P02-eringi-fresh-carrot.md) tests it properly: a blind panel and umami chemistry (glutamate, 5′-GMP, EUC) against kit-only plots and commercial eringi of the same strain, with a shade-and-humidity sub-study to find out what causes the streaks.
+That is one bed, no controls, and a tasting against supermarket eringi of a different strain, freshness and growing system, so it is graded E4: a hypothesis, not a finding. [P02](protocols/P02-eringi-fresh-carrot.md) tests it properly: a blind panel and umami chemistry (glutamate, 5′-GMP, EUC) against kit-only plots and commercial eringi of the same strain, with a shade-and-humidity sub-study to find out what causes the streaks.
+
+**Paper:** [King oyster fruiting outdoors from fresh, unsterilised buried carrot (preprint, PDF)](paper/eringi-fresh-carrot.pdf)
 
 ## Trials (pre-registered)
 
