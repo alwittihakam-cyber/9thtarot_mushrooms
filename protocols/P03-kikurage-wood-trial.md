@@ -2,7 +2,7 @@
 
 | | |
 |---|---|
-| Status | **Proposed, not adopted.** This is proposal 4 from the Kaname River tree ranking, still awaiting Hakam's yes. |
+| Status | **Proposed, not adopted.** This is proposal 4 from the Kaname River tree ranking, still awaiting the grower's yes. |
 | Season | Fell in winter 2026–27, inoculate in Apr 2027, sample the first summer flush (Jun to Sep 2027). Repeat on the first 2028 flush if the 2027 panel is short. |
 | Builds on | Fruiting on named woods: akamegashiwa fruited well in two of three Saga batches (EV0045, EV0050, EV0058); Machilus fruited moderately (EV0046, EV0052); hinoki gave nothing (EV0066); konara ranked last (EV0071) and kunugi was poor or nil in every Saga batch (EV0048, EV0055, EV0060, EV0063). Sugi and ヤブニッケイ have no trial (EV0129, EV0130). Bamboo sawdust raised kikurage polysaccharide and minerals (EV0150), so substrate can move kikurage chemistry. |
 | Outcomes | Texture (the quality kikurage is bought for) and polysaccharides. Yield is not measured. Whether a log fruits at all is recorded, because a wood that does not fruit has no quality to compare. |

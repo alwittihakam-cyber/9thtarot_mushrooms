@@ -2,8 +2,8 @@ cff-version: 1.2.0
 message: "If you use these data or protocols, please cite them as below."
 title: "Tanzawa mushroom substrates: evidence-graded species × substrate matching for log-culture mushrooms"
 authors:
-  - family-names: Al-Witti
-    given-names: Hakam
+  - family-names: Wittcop
+    given-names: J. A.
 version: 0.1.0
 date-released: 2026-11-19
 license: CC-BY-NC-SA-4.0

@@ -5,7 +5,7 @@
 | Status | **Planned by the project.** Pre-registration draft v2. Freeze before the first log is inoculated. |
 | Season | Fell Dec 2026 to Jan 2027; inoculate Feb to Apr 2027; quality sampling from the first natural flush until spring 2029 |
 | Site | Project log yard, Tanzawa–Oyama foothills, Kanagawa |
-| Lead | Hakam Al-Witti |
+| Lead | J. A. Wittcop |
 | Builds on | EV0122: buna-shimeji kit inoculum on konara, a project pilot judged "up to ~40% faster", but by estimate only. Shiitake on konara is rated E3 excellent for fruiting (IBARAKI-GUIDE). Log versus sawdust affects shiitake taste chemistry, but in mixed directions (EV0136, EV0137). |
 | Outcomes | Culinary quality and chemical potency, as in [`docs/quality-methods.md`](../docs/quality-methods.md). Yield is not measured. |
 | Licence | CC BY-NC-SA 4.0 |

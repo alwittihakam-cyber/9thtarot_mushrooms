@@ -1,6 +1,6 @@
 # Licensing and names
 
-Copyright © 2026 Hakam Al-Witti.
+Copyright © 2026 J. A. Wittcop.
 
 | What | Licence |
 |---|---|

@@ -4,7 +4,7 @@
 
 ## Method, as done
 
-* Fresh carrots were pulled, inoculated with pieces of a commercial eringi kit block, and buried again in a bed under the ULCANS shade net.
+* Fresh carrots were pulled, skinned (peeled), had leaves and stems removed, were inoculated with pieces of a commercial eringi kit block, and were buried in a **pot filled with straw and leaf litter**.
 * They were **not dried or sterilised.** The only prior use of carrot the project knows of used dried, sterilised carrot as an additive.
 * A casing of straw plus leaf litter was laid over the bed to keep CO₂ high around the developing pins.
 * No controls were run: no kit pieces without carrot, and no carrot without inoculum.
@@ -38,9 +38,9 @@ Protocol P02 tests 1 and 2 with a shade and humidity cover (§P02.6). Some of th
 
 ## Taste (informal 5-person comparison)
 
-> "The taste of them is more meaty." (Hakam, 2026-11-19)
+> "The taste of them is more meaty." (J. A. Wittcop, the grower, 2026-11-19)
 
-Five people tasted the carrot eringi against **store-bought Japanese supermarket eringi** (corrected 2026-11-19: first recorded as one taster comparing with memory). **Four of the five were blind** to which sample was which. The fifth, Hakam, knew. Who served, and whether they knew, was not recorded. Not recorded: the cooking method, how many of the five agreed, and any scores.
+Five people tasted the carrot eringi against **store-bought Japanese supermarket eringi** (corrected 2026-11-19: first recorded as one taster comparing with memory). Both were cooked in **nabe** (hot pot). **Four of the five were blind** to which sample was which, and **all four judged the carrot eringi meatier** (4/4; one-sided exact binomial p = 0.0625). The fifth, the grower, knew. The two mushrooms look very different, so tasters could tell them apart without knowing the source. Who served, and whether they knew, was not recorded. Not recorded: the cooking method, how many of the five agreed, and any scores.
 
 The comparison differs in much more than carrot: **strain** (supermarket strain unknown), **freshness** (hours vs days from harvest), **maturity** (broad mature caps vs young small caps) and **growing system** (outdoor casing vs indoor sterile bottle or bag). It is **a hypothesis, not a finding**. Protocol P02 tests it blind, against kit-only eringi and against commercial eringi of the same strain, and chemically, through glutamate, 5′-GMP and EUC.
 
