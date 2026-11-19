@@ -1,102 +1,117 @@
 #!/usr/bin/env python3
-"""Simulation-based power for the pre-registered protocols (numpy only).
+"""Power for the pre-registered protocols (numpy + standard library only).
 
     python analysis/power.py      # writes results/power.md
 
-Every assumption below is a placeholder until the project has its own pilot
-variance. Replace the numbers in SCENARIOS when better data exist, re-run, and
-record the change in the protocol's deviation log BEFORE the trial starts.
+Three kinds of endpoint, matching the project's outcomes:
 
-Method: outcomes are simulated on the log scale (yields and colonisation times
-are right-skewed and effects are multiplicative). The test is a two-sided
-Welch-type t statistic on log outcomes (or a paired t on per-block means for
-blocked designs). Its critical value is taken from the same design simulated
-under the null, so no t-tables or SciPy are needed and the false-positive rate
-is held at alpha by construction.
+1. Blind sensory panel, paired ratings. Every panellist tastes both samples
+   (coded, order balanced) and rates an attribute on a 0-100 line scale.
+   Test: paired t on per-panellist differences.
+2. Triangle test (ISO 4120). Is there any perceptible difference? Exact
+   binomial; p_d is the proportion of true discriminators.
+3. Lab assays (umami amino acids, 5'-GMP, EUC, beta-glucan, triterpenes,
+   cordycepin, ergothioneine). Unit = one independent biological replicate
+   (one log or plot, pooled caps of the same flush). Test: Welch t on log scale.
+Plus P01's colonisation-time endpoint (blocked design).
+
+Variance values are ASSUMPTIONS until the project has pilot data:
+  * sensory SD of within-panellist differences: 18 and 25 points on 100;
+  * assay CV between replicates: 15% and 30% (log-SD 0.15 and 0.30). For
+    reference, maitake beta-glucan varied by 1.4-2.0 points within a lot and by
+    2.8-6.3 points between lots (Hokkaido FPRI 2021), i.e. CV ~5-17%.
+Replace them with the project's own numbers before freezing a protocol, and
+log the change.
+
+Critical values are taken from the same design simulated under the null, so no
+t-tables or SciPy are needed and alpha is held by construction.
 """
 from __future__ import annotations
 
+from math import comb
 from pathlib import Path
 
 import numpy as np
 
 ROOT = Path(__file__).resolve().parent.parent
-RNG_SEED = 20261119
+SEED = 20261119
 SIMS = 4000
 ALPHA = 0.05
 
 
-def t_two_group(a: np.ndarray, b: np.ndarray) -> np.ndarray:
-    """Welch t for each row of a (sims x n) vs b (sims x m)."""
-    va, vb = a.var(axis=1, ddof=1), b.var(axis=1, ddof=1)
-    return (a.mean(axis=1) - b.mean(axis=1)) / np.sqrt(va / a.shape[1] + vb / b.shape[1])
+def _power(stat, *args, effect):
+    rng = np.random.default_rng(SEED)
+    crit = np.quantile(np.abs(stat(rng, *args, 0.0)), 1 - ALPHA)
+    return float((np.abs(stat(rng, *args, effect)) > crit).mean())
 
 
-def sim_two_group(rng, n, sigma, log_ratio):
-    a = rng.normal(log_ratio, sigma, (SIMS, n))
-    b = rng.normal(0.0, sigma, (SIMS, n))
-    return t_two_group(a, b)
+def paired_t(rng, n, sd_diff, mean_diff):
+    d = rng.normal(mean_diff, sd_diff, (SIMS, n))
+    return d.mean(1) / (d.std(1, ddof=1) / np.sqrt(n))
 
 
-def sim_blocked(rng, blocks, per_arm, sigma_w, sigma_b, log_ratio):
-    """Randomised complete block: each block (source tree) gives per_arm logs to each arm."""
-    tree = rng.normal(0.0, sigma_b, (SIMS, blocks, 1))
-    a = tree + rng.normal(log_ratio, sigma_w, (SIMS, blocks, per_arm))
-    b = tree + rng.normal(0.0, sigma_w, (SIMS, blocks, per_arm))
-    d = a.mean(axis=2) - b.mean(axis=2)          # per-tree difference: tree effect cancels
-    return d.mean(axis=1) / (d.std(axis=1, ddof=1) / np.sqrt(blocks))
+def welch_log(rng, n, sd, log_ratio):
+    a, b = rng.normal(log_ratio, sd, (SIMS, n)), rng.normal(0, sd, (SIMS, n))
+    return (a.mean(1) - b.mean(1)) / np.sqrt(a.var(1, ddof=1) / n + b.var(1, ddof=1) / n)
 
 
-def power(stat_fn, *args, log_ratio):
-    rng = np.random.default_rng(RNG_SEED)
-    null = np.abs(stat_fn(rng, *args, 0.0))
-    crit = np.quantile(null, 1 - ALPHA)
-    alt = np.abs(stat_fn(rng, *args, log_ratio))
-    return float((alt > crit).mean())
+def blocked(rng, blocks, per_arm, sd_w, sd_b, log_ratio):
+    tree = rng.normal(0, sd_b, (SIMS, blocks, 1))
+    a = tree + rng.normal(log_ratio, sd_w, (SIMS, blocks, per_arm))
+    b = tree + rng.normal(0, sd_w, (SIMS, blocks, per_arm))
+    d = a.mean(2) - b.mean(2)
+    return d.mean(1) / (d.std(1, ddof=1) / np.sqrt(blocks))
 
 
-SCENARIOS = [
-    # (protocol, question, assumption text, kind, grid, sigma(s), effect ratios)
-    ("P01", "Shiitake: kit-block inoculum vs dowel spawn, days to full end-face colonisation",
-     "log-scale SD within tree 0.30 (CV ~30%), between trees 0.20; effect = kit colonises 1.4× or 1.2× faster",
-     "blocked", [(6, 2), (8, 2), (10, 2), (8, 3), (10, 3), (12, 3)], (0.30, 0.20), [1.4, 1.2]),
-    ("P02", "Eringi: kit + fresh carrot vs kit alone, fresh yield per bed",
-     "log-scale SD 0.60 between beds; effect = carrot doubles (2×) or adds 50% (1.5×) to yield",
-     "two", [4, 6, 8, 10, 12], 0.60, [2.0, 1.5]),
-    ("P03", "Kikurage: candidate wood vs akamegashiwa benchmark, kg per m³ of log",
-     "log-scale SD 0.80 between logs (Saga yields vary several-fold); effect = 2.5× or 1.5× difference",
-     "two", [5, 8, 10, 15, 20], 0.80, [2.5, 1.5]),
-    ("P04", "Enoki / golden oyster: hackberry or zelkova vs cherry, g per kg of log",
-     "log-scale SD 0.60 between logs; effect = 2× or 1.5× difference",
-     "two", [5, 8, 10, 15], 0.60, [2.0, 1.5]),
-    ("P05", "Reishi: ume vs konara, dry fruit-body mass per log",
-     "log-scale SD 0.60 between logs; effect = 2× or 1.5× difference",
-     "two", [6, 8, 10, 15, 20], 0.60, [2.0, 1.5]),
-]
+def triangle_power(n, pd):
+    """Exact one-sided binomial power for a triangle test."""
+    p0, p1 = 1 / 3, 1 / 3 + 2 / 3 * pd
+    tail = lambda c, p: sum(comb(n, k) * p ** k * (1 - p) ** (n - k) for k in range(c, n + 1))
+    c = next(c for c in range(n + 1) if tail(c, p0) <= ALPHA)
+    return c, tail(c, p1)
 
 
 def main():
-    lines = ["# Power analysis", "",
-             f"Generated by `analysis/power.py` ({SIMS} simulations per cell, seed {RNG_SEED}, two-sided α = {ALPHA}). "
-             "Assumed variances are placeholders, not measurements; see each protocol.", ""]
-    for pid, q, assume, kind, grid, sig, effects in SCENARIOS:
-        lines += [f"## {pid}: {q}", "", f"Assumptions: {assume}.", ""]
-        if kind == "blocked":
-            lines += ["| Source trees | Logs per arm per tree | Logs total | " +
-                      " | ".join(f"Power at {e}×" for e in effects) + " |",
-                      "|---|---|---|" + "---|" * len(effects)]
-            for blocks, per in grid:
-                pw = [power(sim_blocked, blocks, per, sig[0], sig[1], log_ratio=np.log(e)) for e in effects]
-                lines.append(f"| {blocks} | {per} | {2 * blocks * per} | " + " | ".join(f"{p:.2f}" for p in pw) + " |")
-        else:
-            lines += ["| Units per arm | " + " | ".join(f"Power at {e}×" for e in effects) + " |",
-                      "|---|" + "---|" * len(effects)]
-            for n in grid:
-                pw = [power(sim_two_group, n, sig, log_ratio=np.log(e)) for e in effects]
-                lines.append(f"| {n} | " + " | ".join(f"{p:.2f}" for p in pw) + " |")
-        lines.append("")
+    L = ["# Power analysis", "",
+         f"Generated by `analysis/power.py` ({SIMS} simulations per cell, seed {SEED}, two-sided α = {ALPHA} "
+         "unless stated). Variances are assumptions until the project's own pilot data replace them.", ""]
+
+    L += ["## Blind sensory panel: paired attribute ratings (P01–P04)", "",
+          "Each panellist rates both coded samples on a 0–100 line scale (for example *umami / meaty*, *firmness*, "
+          "*aroma*, *overall liking*). Power to detect the stated mean difference:", "",
+          "| Panellists | Δ10, SD 18 | Δ15, SD 18 | Δ10, SD 25 | Δ15, SD 25 |", "|---|---|---|---|---|"]
+    for n in (8, 12, 16, 24, 32, 40):
+        pw = [_power(paired_t, n, sd, effect=d) for sd, d in ((18, 10), (18, 15), (25, 10), (25, 15))]
+        L.append(f"| {n} | " + " | ".join(f"{p:.2f}" for p in pw) + " |")
+    L += ["", "A panel can repeat a session on a later flush. Average each panellist's sessions first, so "
+          "the panellist stays the unit.", ""]
+
+    L += ["## Triangle test: is there any perceptible difference? (P01–P04, before a rating test)", "",
+          "One-sided exact binomial, guessing rate 1/3. *p_d* = share of tasters who truly perceive the difference.", "",
+          "| Judgements | Correct needed | Power, p_d 0.2 | Power, p_d 0.3 | Power, p_d 0.4 |", "|---|---|---|---|---|"]
+    for n in (18, 24, 30, 36, 48, 60):
+        c, _ = triangle_power(n, 0.2)
+        L.append(f"| {n} | {c} | " + " | ".join(f"{triangle_power(n, pd)[1]:.2f}" for pd in (0.2, 0.3, 0.4)) + " |")
+    L += [""]
+
+    L += ["## Lab assays: compound content per independent replicate (all protocols)", "",
+          "Unit = one log or plot (caps of the same flush pooled, freeze-dried). Power to detect a ratio between two arms:", "",
+          "| Replicates per arm | 1.3×, CV 15% | 1.5×, CV 15% | 1.3×, CV 30% | 1.5×, CV 30% |", "|---|---|---|---|---|"]
+    for n in (3, 4, 6, 8, 10, 12):
+        pw = [_power(welch_log, n, sd, effect=np.log(r)) for sd, r in ((.15, 1.3), (.15, 1.5), (.30, 1.3), (.30, 1.5))]
+        L.append(f"| {n} | " + " | ".join(f"{p:.2f}" for p in pw) + " |")
+    L += ["", "With 3 or 4 replicates only large differences are detectable; 6–8 per arm is the practical "
+          "minimum for a publishable comparison of compound content.", ""]
+
+    L += ["## P01 colonisation time (blocked by source tree)", "",
+          "log-scale SD within tree 0.30, between trees 0.20; effect = kit colonises 1.4× or 1.2× faster.", "",
+          "| Source trees | Logs per arm per tree | Logs total | Power at 1.4× | Power at 1.2× |", "|---|---|---|---|---|"]
+    for b, k in ((6, 2), (8, 2), (10, 2), (8, 3), (10, 3), (12, 3)):
+        pw = [_power(blocked, b, k, .30, .20, effect=np.log(e)) for e in (1.4, 1.2)]
+        L.append(f"| {b} | {k} | {2 * b * k} | " + " | ".join(f"{p:.2f}" for p in pw) + " |")
+    L.append("")
     out = ROOT / "results" / "power.md"
-    out.write_text("\n".join(lines), encoding="utf-8")
+    out.write_text("\n".join(L), encoding="utf-8")
     print(out.read_text(encoding="utf-8"))
 
 

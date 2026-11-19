@@ -51,3 +51,5 @@ antheraea-pupae,Oak silkmoth pupae,サクサン蛹,Antheraea pernyi,Saturniidae,
 cicada-nymph,Cicada nymphs,セミ幼虫,Cicadidae,Cicadidae,insect host,yes,have (wild),no,
 sambucus,Elder,ニワトコ,Sambucus racemosa subsp. sieboldiana,Viburnaceae,hardwood-diffuse-porous,yes,no,no,Toxic to dogs; the project has a dog
 morus,Mulberry,クワ,Morus spp.,Moraceae,hardwood-ring-porous,yes,no,no,
+log-generic,Any log (wood not named),原木 (樹種不明),unspecified hardwood,n/a,hardwood-unspecified,n/a,have,,Log culture compared with sawdust beds when the source does not name the wood
+okara,Okara (bean-curd refuse) supplement,おから,Glycine max residue,Fabaceae,non-wood: agri-residue,n/a,unknown,no,Sawdust supplement; cheap local by-product in Japan

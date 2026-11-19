@@ -1,43 +1,43 @@
-species,substrate,role,plan_grade,logs_planned,verdict,best_level,outcome,claims,better_evidenced_project_woods,species_id,substrate_id
-Wood ear,Konara oak,now,B,10,contradicted,E2,poor,EV0071,,kikurage,konara
-Wood ear,Cherry,now,B,,conflicting evidence,E2,marginal,EV0059;EV0061,,kikurage,cerasus
-Cicada flower,Cicada nymphs,now,,,no production data,,,,,cordyceps-cicadae,cicada-nymph
-Scarlet caterpillar club,Silkworm pupae,now,,,no production data,,,,,cordyceps-militaris,silkworm-pupae
-King oyster,Wild Apiaceae roots,later,,,no production data,,,,,eringi,apiaceae-wild
-Chestnut mushroom,Konara oak,now,B,8,no evidence,,,,,chestnut-mushroom,konara
-Chestnut mushroom,Cherry,now,B,,no evidence,,,,,chestnut-mushroom,cerasus
-Chicken of the woods,Konara oak,now,A,6,no evidence,,,,,chicken-of-the-woods,konara
-Chicken of the woods,Cherry,now,A,,no evidence,,,,,chicken-of-the-woods,cerasus
-Enoki,Cherry,now,B,10,no evidence,,,,,enoki,cerasus
-Golden oyster,Cherry,now,B,4,no evidence,,,,,golden-oyster,cerasus
-Italian oyster,Cherry,now,A,8,no evidence,,,,,italian-oyster,cerasus
-Oyster mushroom,Cherry,now,A,10,no evidence,,,,,hiratake,cerasus
-Turkey tail,Konara oak,now,A,6,no evidence,,,,,turkey-tail,konara
-Turkey tail,Cherry,now,A,,no evidence,,,,,turkey-tail,cerasus
-Buna-shimeji,Beech,later,,,no evidence,,,,,buna-shimeji,fagus
-Chestnut mushroom,Willow,later,,,no evidence,,,,,chestnut-mushroom,salix
-Chicken of the woods,Sawtooth oak,later,,,no evidence,,,,,chicken-of-the-woods,kunugi
-Kuritake (brick cap),Chestnut,later,,,no evidence,,,,Hornbeam (E3); Konara oak (E3); Sawtooth oak (E3),kuritake,castanea
-Lion's mane,Beech,later,,,no evidence,,,,,lions-mane,fagus
-Maitake,Sawtooth oak,later,,,no evidence,,,,,maitake,kunugi
-Mukitake,Beech,later,,,no evidence,,,,Cherry (E3); Konara oak (E3),mukitake,fagus
-Mukitake,Maple,later,,,no evidence,,,,Cherry (E3); Konara oak (E3),mukitake,acer
-Wood ear,Elder,later,,,no evidence,,,,,kikurage,sambucus
-Wood ear,Mulberry,later,,,no evidence,,,,,kikurage,morus
-Lion's mane,Konara oak,now,A,12,hypothesis only,E5,good,EV0135,,lions-mane,konara
-Reishi,Ume,now,A,25,hypothesis only,E5,good,EV0132,,reishi,prunus-mume
-Enoki,Chinese hackberry,later,,,hypothesis only,E5,good,EV0126,,enoki,celtis
-Italian oyster,Willow,later,,,hypothesis only,E5,good,EV0134,,italian-oyster,salix
-Oyster mushroom,Willow,later,,,hypothesis only,E5,good,EV0133,,hiratake,salix
-Buna-shimeji,Konara oak,now,B,8,colonisation only,,,,,buna-shimeji,konara
-King oyster,Fresh carrot root,now,,bed,project pilot only,E4,fruited-unquantified,EV0121,,eringi,daucus-root
-Kuritake (brick cap),Konara oak,now,A,10 + stumps,supported,E3,excellent,EV0010,Hornbeam (E3); Sawtooth oak (E3),kuritake,konara
-Maitake,Konara oak,now,A,12 + stumps,supported,E2,good,EV0024,,maitake,konara
-Mukitake,Cherry,now,B,8,supported,E3,excellent,EV0016,Konara oak (E3),mukitake,cerasus
-Nameko,Cherry,now,A,15,supported,E2,good,EV0040,Hornbeam (E3); Maple (E2),nameko,cerasus
-Shaggy ink cap,Sawdust / agri-residue mix with casing,now,,patch,supported,E2,good,EV0110,,shaggy-ink-cap,compost-mix
-Shiitake,Konara oak,now,A,70,supported,E3,excellent,EV0001,Sawtooth oak (E3),shiitake,konara
-Golden oyster,Elm,later,,,supported,E3,excellent,EV0022,,golden-oyster,ulmus
-Kuritake (brick cap),Sawtooth oak,later,,,supported,E3,excellent,EV0011,Hornbeam (E3); Konara oak (E3),kuritake,kunugi
-Nameko,Beech,later,,,supported,E2,excellent,EV0072,Hornbeam (E3); Maple (E2),nameko,fagus
-Shiitake,Sawtooth oak,later,A,,supported,E3,excellent,EV0002,Konara oak (E3),shiitake,kunugi
+species,substrate,role,culinary_verdict,culinary_level,potency_verdict,potency_level,fruiting_verdict,fruiting_level,log_vs_sawdust_evidence,species_id,substrate_id
+Scarlet caterpillar club,Silkworm pupae,now,no evidence,,contradicted,E1,supported,E1,,cordyceps-militaris,silkworm-pupae
+Wood ear,Konara oak,now,no evidence,,no evidence,,contradicted,E2,,kikurage,konara
+Wood ear,Cherry,now,no evidence,,no evidence,,mixed evidence,E2,,kikurage,cerasus
+Buna-shimeji,Konara oak,now,no evidence,,no evidence,,no evidence,,,buna-shimeji,konara
+Chestnut mushroom,Konara oak,now,no evidence,,no evidence,,no evidence,,,chestnut-mushroom,konara
+Chestnut mushroom,Cherry,now,no evidence,,no evidence,,no evidence,,,chestnut-mushroom,cerasus
+Chicken of the woods,Konara oak,now,no evidence,,no evidence,,no evidence,,,chicken-of-the-woods,konara
+Chicken of the woods,Cherry,now,no evidence,,no evidence,,no evidence,,,chicken-of-the-woods,cerasus
+Cicada flower,Cicada nymphs,now,no evidence,,no evidence,,no evidence,,,cordyceps-cicadae,cicada-nymph
+Enoki,Cherry,now,no evidence,,no evidence,,no evidence,,,enoki,cerasus
+Golden oyster,Cherry,now,no evidence,,no evidence,,no evidence,,,golden-oyster,cerasus
+Italian oyster,Cherry,now,no evidence,,no evidence,,no evidence,,,italian-oyster,cerasus
+Oyster mushroom,Cherry,now,no evidence,,no evidence,,no evidence,,,hiratake,cerasus
+Turkey tail,Konara oak,now,no evidence,,no evidence,,no evidence,,,turkey-tail,konara
+Turkey tail,Cherry,now,no evidence,,no evidence,,no evidence,,,turkey-tail,cerasus
+Buna-shimeji,Beech,later,no evidence,,no evidence,,no evidence,,,buna-shimeji,fagus
+Chestnut mushroom,Willow,later,no evidence,,no evidence,,no evidence,,,chestnut-mushroom,salix
+Chicken of the woods,Sawtooth oak,later,no evidence,,no evidence,,no evidence,,,chicken-of-the-woods,kunugi
+King oyster,Wild Apiaceae roots,later,no evidence,,no evidence,,no evidence,,,eringi,apiaceae-wild
+Kuritake (brick cap),Chestnut,later,no evidence,,no evidence,,no evidence,,,kuritake,castanea
+Lion's mane,Beech,later,no evidence,,no evidence,,no evidence,,,lions-mane,fagus
+Maitake,Sawtooth oak,later,no evidence,,no evidence,,no evidence,,culinary: excellent E2,maitake,kunugi
+Mukitake,Beech,later,no evidence,,no evidence,,no evidence,,,mukitake,fagus
+Mukitake,Maple,later,no evidence,,no evidence,,no evidence,,,mukitake,acer
+Wood ear,Elder,later,no evidence,,no evidence,,no evidence,,,kikurage,sambucus
+Wood ear,Mulberry,later,no evidence,,no evidence,,no evidence,,,kikurage,morus
+Lion's mane,Konara oak,now,no evidence,,no evidence,,hypothesis only,E5,,lions-mane,konara
+Reishi,Ume,now,no evidence,,supported,E2,hypothesis only,E5,potency: excellent E2,reishi,prunus-mume
+Enoki,Chinese hackberry,later,no evidence,,no evidence,,hypothesis only,E5,,enoki,celtis
+Italian oyster,Willow,later,no evidence,,no evidence,,hypothesis only,E5,,italian-oyster,salix
+Oyster mushroom,Willow,later,no evidence,,no evidence,,hypothesis only,E5,,hiratake,salix
+King oyster,Fresh carrot root,now,project pilot only,E4,no evidence,,project pilot only,E4,,eringi,daucus-root
+Kuritake (brick cap),Konara oak,now,no evidence,,no evidence,,supported,E3,,kuritake,konara
+Maitake,Konara oak,now,no evidence,,no evidence,,supported,E2,culinary: excellent E2,maitake,konara
+Mukitake,Cherry,now,no evidence,,no evidence,,supported,E3,,mukitake,cerasus
+Nameko,Cherry,now,no evidence,,no evidence,,supported,E2,culinary: excellent E2,nameko,cerasus
+Shaggy ink cap,Sawdust / agri-residue mix with casing,now,no evidence,,no evidence,,supported,E2,,shaggy-ink-cap,compost-mix
+Shiitake,Konara oak,now,no evidence,,no evidence,,supported,E3,culinary: marginal (mixed) E2,shiitake,konara
+Golden oyster,Elm,later,no evidence,,no evidence,,supported,E3,,golden-oyster,ulmus
+Kuritake (brick cap),Sawtooth oak,later,no evidence,,no evidence,,supported,E3,,kuritake,kunugi
+Nameko,Beech,later,no evidence,,no evidence,,supported,E2,culinary: excellent E2,nameko,fagus
+Shiitake,Sawtooth oak,later,no evidence,,no evidence,,supported,E3,culinary: marginal (mixed) E2,shiitake,kunugi

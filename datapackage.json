@@ -1,6 +1,6 @@
 {
   "name": "tanzawa-mushroom-substrates",
-  "title": "Evidence-graded species × substrate matching for log-culture mushrooms",
+  "title": "Evidence-graded species × substrate matching for log-culture mushrooms: culinary quality, chemical potency and fruiting",
   "licenses": [
     {
       "name": "CC-BY-NC-SA-4.0",
@@ -317,14 +317,44 @@
           {
             "name": "metric_class",
             "type": "string",
-            "description": "Only production claims enter the suitability matrix",
+            "description": "culinary and potency are the primary outcomes; fruiting answers only \"does it fruit on this substrate\"; colonisation and host-record never grade a cell",
             "constraints": {
               "required": true,
               "enum": [
-                "production",
+                "culinary",
+                "potency",
+                "fruiting",
                 "colonisation",
-                "quality",
                 "host-record"
+              ]
+            }
+          },
+          {
+            "name": "dimension",
+            "type": "string",
+            "description": "What exactly was measured",
+            "constraints": {
+              "required": true,
+              "enum": [
+                "sensory",
+                "taste-umami",
+                "taste-5'-GMP",
+                "aroma",
+                "texture",
+                "nutrition",
+                "shelf-life",
+                "morphology",
+                "triterpenes",
+                "polysaccharides",
+                "beta-glucan",
+                "cordycepin",
+                "ergothioneine",
+                "erinacines",
+                "antioxidant",
+                "bioactivity",
+                "fruiting",
+                "colonisation",
+                "host"
               ]
             }
           },

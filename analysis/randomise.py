@@ -28,6 +28,7 @@ ARMS = {
     "P03": ["akamegashiwa", "sugi", "yabunikkei", "konara"],
     "P04": ["celtis", "zelkova", "cerasus"],
     "P05": ["ume", "konara", "cerasus"],
+    "P06": ["wild-moth", "silkworm", "beetle-larvae", "brown-rice"],
 }
 
 

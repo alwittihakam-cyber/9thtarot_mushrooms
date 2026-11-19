@@ -1,26 +1,54 @@
 {
-  "claims": 135,
-  "sources": 32,
-  "sources_reverified": 11,
+  "claims": 153,
+  "claims_by_class": {
+    "colonisation": 2,
+    "culinary": 9,
+    "fruiting": 126,
+    "host-record": 8,
+    "potency": 8
+  },
+  "sources": 42,
+  "sources_reverified": 21,
   "by_level": {
-    "E1": 4,
-    "E2": 94,
+    "E1": 9,
+    "E2": 106,
     "E3": 22,
-    "E4": 3,
+    "E4": 4,
     "E5": 12
   },
-  "cells": 112,
   "plan_pairs": 42,
   "plan_verdicts": {
-    "colonisation only": 1,
-    "conflicting evidence": 1,
-    "contradicted": 1,
-    "hypothesis only": 5,
-    "no evidence": 20,
-    "no production data": 3,
-    "project pilot only": 1,
-    "supported": 10,
-    "weak": 0
+    "culinary": {
+      "contradicted": 0,
+      "mixed evidence": 0,
+      "weak": 0,
+      "no evidence": 41,
+      "hypothesis only": 0,
+      "project pilot only": 1,
+      "supported": 0
+    },
+    "potency": {
+      "contradicted": 1,
+      "mixed evidence": 0,
+      "weak": 0,
+      "no evidence": 40,
+      "hypothesis only": 0,
+      "project pilot only": 0,
+      "supported": 1
+    },
+    "fruiting": {
+      "contradicted": 1,
+      "mixed evidence": 1,
+      "weak": 0,
+      "no evidence": 23,
+      "hypothesis only": 5,
+      "project pilot only": 1,
+      "supported": 11
+    }
   },
-  "project_wood_gaps": "136/160"
+  "project_wood_cells_with_evidence": {
+    "culinary": "1/220",
+    "potency": "1/220",
+    "fruiting": "27/220"
+  }
 }

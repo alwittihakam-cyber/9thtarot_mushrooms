@@ -1,56 +1,71 @@
-# Which wood for which mushroom? An evidence-graded answer
+# Which wood for which mushroom? An evidence-graded answer, judged on taste and potency
 
 **Open research from a small log-culture mushroom farm in the Tanzawa–Oyama foothills, Kanagawa, Japan.**
 
 Growers choose a log species for each mushroom by tradition, supplier advice or a guide's ◎. This repository records *why* each choice is believed, grades how good that reason is, and sets out trials for the choices that have no good reason yet.
 
-* **135 claims** about 20 cultivated species on 54 substrates, from 32 sources, each with a DOI or URL
-* **Every claim graded**, from E1 (replicated trial with statistics) to E5 (extrapolation, which is never presented as a finding)
-* **11 key sources re-read against the originals**, and [12 corrections](docs/corrections.md) to the project's own earlier reports
-* **An audit of the farm's own planting plan** against that evidence
-* **5 pre-registered trial protocols**, with power analysis, randomisation, blinding and data templates
+The farm sells on **culinary quality** and **chemical potency** (β-glucan, ergothioneine, triterpenes, cordycepin and so on), not on volume. So those are the outcomes here. Yield is not measured; published production data is used only to ask whether a species fruits on a wood at all.
+
+* **153 claims** about 20 cultivated species on 56 substrates, from 42 sources, each with a DOI or URL
+* **Every claim graded**, from E1 (replicated trial with statistics) to E5 (extrapolation, never presented as a finding), and **classed** as culinary, potency or fruiting, each graded separately
+* **21 sources re-read against the originals**, and [12 corrections](docs/corrections.md) to the farm's own earlier reports
+* **An audit of the farm's planting plan** for taste, potency and fruiting
+* **6 pre-registered trial protocols** with blind tasting panels, lab assays, power analysis, randomisation and data templates
 * One command rebuilds every table and figure from the data. CI checks that nothing drifts.
 
-![Species × the woods this farm can get](results/figures/matrix_project_woods.png)
+![Species × the woods this farm can get, for culinary quality, potency and fruiting](results/figures/matrix_project_woods.png)
 
-*Colour shows the outcome of the best available evidence, and the cell text shows its level. Dashed cells with **?** have only an extrapolation, and blank cells have nothing. Full matrix across all substrates: [`results/figures/matrix_all.png`](results/figures/matrix_all.png).*
+*Colour shows the outcome of the best available evidence, and the cell text shows its level. Dashed cells with **?** have only an extrapolation, and blank cells have nothing. Full matrices across all substrates: [culinary](results/figures/matrix_all_culinary.png), [potency](results/figures/matrix_all_potency.png), [fruiting](results/figures/matrix_all_fruiting.png).*
 
 ## What the evidence says
 
-**About the farm's own plan** ([`results/plan_audit.md`](results/plan_audit.md)). Of the 24 species–wood pairings in use now, **6 are supported** by a trial or a prefectural rating:
+**The headline: nobody has compared taste or potency between named log woods.** For the 20 species × 11 woods this farm can get, only **1 of 220 cells** has any culinary evidence (the farm's own carrot eringi pilot) and only **1 of 220** has any potency evidence (reishi from ume). Fruiting evidence covers 27 of 220 ([`results/gaps.md`](results/gaps.md)). Every wood choice the farm makes for taste is, so far, untested.
 
-* shiitake, kuritake and maitake on konara
-* nameko and mukitake on cherry
-* shaggy ink cap on a cased compost mix
+**What *is* known about quality and substrate** ([`docs/quality-methods.md`](docs/quality-methods.md) §6):
 
-The rest are not:
+* **Logs beat sawdust beds for maitake, nameko and reishi.** Log maitake had more umami and sweet amino acids and more 5′-GMP. Log-grown nameko soup was preferred on taste (P < 0.001) and aroma. Log reishi had about 1.2× the triterpenoids, more lucidenic acids and higher antioxidant capacity, with equal polysaccharides. (E2)
+* **Shiitake is mixed.** Sawdust gave more free amino acids, including bitter ones; logs gave slightly more 5′-GMP. (E2)
+* **Substrate species matters for eringi.** Willow sawdust gave the best taste and texture against birch and corncob. (E2)
+* **Cordyceps has a form–potency trade-off.** On rhinoceros beetle larvae it had about 34× the cordycepin of silkworm pupae, but silkworm gave the best-formed fruit bodies. (E1, one study, 3 replicates) → [P06](protocols/P06-cordyceps-host-potency.md)
+* **Reishi from ume had the strongest bioactivity** of the hosts tested, in sterile sawdust culture. (E2) → [P05](protocols/P05-reishi-ume-potency.md)
 
-* **Kikurage on konara is contradicted.** Kunugi gave 0 to 0.9 kg/m³ in all four Saga batches and シラカシ gave nothing, while the best akamegashiwa (アカメガシワ) and dogwood (ミズキ) batches gave 32 to 50 kg/m³. Aomori ranked konara last of three woods. (E2)
-* **Reishi on ume rests on bioactivity, not yield.** The ume paper measured enzyme and blood-pressure assays, not harvest. Ume as a production wood is untested. → [P05](protocols/P05-reishi-ume-yield.md)
-* **Ten pairings have no evidence at all.** These are enoki, hiratake, Italian oyster and golden oyster on cherry, plus turkey tail, chicken of the woods and chestnut mushroom on both konara and cherry. Lion's mane on konara rests only on a Korean trial of an unnamed oak. They may well work, but nobody has measured it.
+**The farm's own plan** ([`results/plan_audit.md`](results/plan_audit.md)), 42 species–wood pairings:
 
-**Findings worth acting on:**
+| | Culinary | Potency | Fruits at all? |
+|---|---|---|---|
+| Supported | 0 | 1 (reishi on ume) | 11 |
+| Contradicted | 0 | 1 (Cordyceps on silkworm: lowest cordycepin) | 1 (kikurage on konara) |
+| Mixed evidence | 0 | 0 | 1 (kikurage on cherry) |
+| Farm pilot only | 1 (eringi on carrot) | 0 | 1 |
+| Hypothesis or no evidence | 41 | 40 | 28 |
 
+* **Kikurage on konara is contradicted for fruiting.** Kunugi gave almost nothing in every Saga batch, and Aomori ranked konara last of three woods, while akamegashiwa (アカメガシワ) and dogwood (ミズキ) were among the best. (E2) → [P03](protocols/P03-kikurage-wood-trial.md)
 * **Hornbeam (シデ類) is rated best (◎) for nameko and kuritake** and good for shiitake. The farm already has access to it. (E3)
-* **Maitake does not need oak.** Alder beat konara over six years. Sugi gave 78 to 88% of konara's yield for two strains, while a third gave nothing. Strain choice changed yield on the same konara by about 48%. (E2)
+* **22 pairings have no evidence of any kind, 12 of them in use now.** These include enoki, hiratake, Italian oyster and golden oyster on cherry, and turkey tail, chestnut mushroom and chicken of the woods on both konara and cherry. → [P04](protocols/P04-hackberry-zelkova-enoki-golden-oyster.md)
 * **Kikurage results come from *Auricularia cornea*** (アラゲキクラゲ). Whether they hold for *A. heimuer* is unknown.
-* **Eringi failed on all six log woods in Aichi** (contamination). That makes the farm's fresh-carrot method, which fruited on 2026-11-11, more interesting, but it has not yet been replicated. → [P02](protocols/P02-eringi-fresh-carrot.md)
 
-**Where the gaps are** ([`results/gaps.md`](results/gaps.md)). For the 16 wood-decay species × 10 woods the farm can get, **136 of 160 cells have no production evidence**.
+![Evidence profile per species and class](results/figures/evidence_profile.png)
 
-![Evidence profile per species](results/figures/evidence_profile.png)
+## Field result: eringi on fresh, buried carrot ([OBS-01](docs/observations/OBS-01.md))
+
+<img src="docs/observations/OBS-01/2026-11-19_cap-streaks-in-bed.jpg" width="360" alt="Eringi cap with dark radial zebra streaks, growing through straw and leaf casing">
+
+Pieces of a commercial eringi kit, pushed into **fresh, unsterilised carrots** and buried again under a straw and leaf-litter casing, pinned on 2026-11-11 and gave a full tray by 2026-11-19. Every published use of carrot for eringi used it dried and sterilised, and eringi failed on all six log woods in Aichi. The caps are broad and flat with **dark radial "zebra" streaks**, nothing like indoor eringi, and the grower found them **"more meaty"**.
+
+That is one bed, one unblinded taster and no controls, so it is graded E4: a hypothesis, not a finding. [P02](protocols/P02-eringi-fresh-carrot.md) tests it properly: a blind panel and umami chemistry (glutamate, 5′-GMP, EUC) against kit-only plots and commercial eringi of the same strain, with a shade-and-humidity sub-study to find out what causes the streaks.
 
 ## Trials (pre-registered)
 
-| | Question | Status |
-|---|---|---|
-| [P01](protocols/P01-shiitake-kit-vs-dowel.md) | Does kit-block inoculum colonise raw konara faster than dowel spawn of the same strain? 60 logs from 10 source trees, blinded photo scoring | **Planned, spring 2027** |
-| [P02](protocols/P02-eringi-fresh-carrot.md) | Does fresh, unsterilised carrot add eringi yield beyond the kit inoculum itself? | Proposed |
-| [P03](protocols/P03-kikurage-wood-trial.md) | Kikurage on sugi and Japanese cinnamon vs the akamegashiwa benchmark | Proposed |
-| [P04](protocols/P04-hackberry-zelkova-enoki-golden-oyster.md) | Enoki and golden oyster on hackberry and zelkova vs cherry | Proposed |
-| [P05](protocols/P05-reishi-ume-yield.md) | Reishi yield on ume vs konara vs cherry | Proposed |
+| | Question | Primary outcomes | Status |
+|---|---|---|---|
+| [P01](protocols/P01-shiitake-kit-vs-dowel.md) | Does kit-block inoculum colonise raw konara faster than dowel spawn, **without costing taste**? | Days to colonisation; blind liking (non-inferiority) | **Planned, spring 2027** |
+| [P02](protocols/P02-eringi-fresh-carrot.md) | Is carrot-grown eringi really meatier? | Blind umami/meaty rating; EUC | Proposed |
+| [P03](protocols/P03-kikurage-wood-trial.md) | Does kikurage on sugi or Japanese cinnamon keep its crunch? | Blind firmness; rehydration and TPA; polysaccharides | Proposed |
+| [P04](protocols/P04-hackberry-zelkova-enoki-golden-oyster.md) | Do hackberry or zelkova give better enoki and golden oyster than cherry? | Blind umami / liking; ergothioneine | Proposed |
+| [P05](protocols/P05-reishi-ume-potency.md) | Does the ume potency advantage hold on raw, buried logs? | Total triterpenes | Proposed |
+| [P06](protocols/P06-cordyceps-host-potency.md) | Cordycepin on wild moth pupae vs silkworm vs beetle larvae | Cordycepin; fruit-body form | Proposed |
 
-Each protocol states its hypotheses, controls, blocking, sample size with power ([`results/power.md`](results/power.md)), a seeded randomisation ([`analysis/randomise.py`](analysis/randomise.py)), blinding, outcome definitions ([`docs/metrics.md`](docs/metrics.md)), an analysis plan fixed in advance, and a deviation log. A protocol is frozen with a `prereg/Pxx-v1` git tag and an OSF registration before the first unit is inoculated. Results are published whichever way they go.
+Every protocol uses the same quality methods ([`docs/quality-methods.md`](docs/quality-methods.md)): same-flush, same-stage sampling with the log or plot as the unit; a coded, Williams-balanced blind panel on 0–100 line scales; penetrometer or TPA texture and a fixed shelf-life score; umami chemistry by HPLC with Yamaguchi's equivalent umami concentration; and the key potency compounds for each species, reported per gram of dry weight. Each states hypotheses, controls, blocking, sample size with power ([`results/power.md`](results/power.md)), a seeded randomisation ([`analysis/randomise.py`](analysis/randomise.py)), blinding, an analysis plan fixed in advance and a deviation log. A protocol is frozen with a `prereg/Pxx` git tag and an OSF registration before the first unit is inoculated. Results are published whichever way they go.
 
 ## Evidence levels
 
@@ -59,29 +74,30 @@ Each protocol states its hypotheses, controls, blocking, sample size with power 
 | **E1** | Replicated trial | Peer-reviewed, replicated, with inferential statistics, and the design has been checked |
 | **E2** | Single trial or report | Prefectural trials, unreplicated studies, published host records |
 | **E3** | Guide rating | Expert ◎/○ ratings with no data shown |
-| **E4** | Farm pilot | This farm's own unreplicated observations |
+| **E4** | Farm pilot | This farm's own unreplicated observations, such as OBS-01 |
 | **E5** | Extrapolation | Reasoning from related trees or fungi. Each row states why; it is a hypothesis to test |
 
-A cell takes its grade from its **best** evidence level only. Within that level the outcome is the median, rounded *down*, and the cell is flagged when claims disagree. Plan grades are never evidence. The full rules are in [`docs/evidence-grading.md`](docs/evidence-grading.md).
+Culinary, potency and fruiting claims are graded separately. A cell takes its grade from its **best** evidence level only. Within that level the outcome is the median, rounded *down*, and the cell is flagged when claims disagree. Plan grades are never evidence. The full rules are in [`docs/evidence-grading.md`](docs/evidence-grading.md).
 
 ## Repository layout
 
 ```
 data/                 the dataset (source of truth)
-  evidence.csv        one row per claim: species, substrate, level, outcome, value, source, locator
+  evidence.csv        one row per claim: species, substrate, class, dimension, level, outcome, value, source, locator
   sources.csv         citations, DOI/URL, and whether each was re-read against the original
   species.csv         20 species with current names and taxon caveats
-  substrates.csv      54 substrates with family, wood anatomy, and whether the farm can get them
+  substrates.csv      56 substrates with family, wood anatomy, and whether the farm can get them
   plan_assignments.csv  the farm's current planting plan, to be audited
 datapackage.json      Frictionless Data schema: types, enums, keys, foreign keys
 analysis/
-  build.py            validate + rebuild matrix, plan audit, gaps and figures
+  build.py            validate + rebuild matrices (per class), plan audit, gaps and figures
   power.py            simulation-based power for every protocol (numpy only)
   randomise.py        blocked, seeded allocation with blind codes
-protocols/            pre-registered trial protocols P01–P05
-templates/            CSV templates for logs, colonisation scores, harvests, beds, events, environment
+protocols/            pre-registered trial protocols P01–P06
+templates/            CSV templates: logs, beds, colonisation, harvests, samples, sensory,
+                      assays, texture, shelf life, events, environment
 results/              generated: do not edit by hand
-docs/                 grading rules, metric definitions, corrections
+docs/                 grading rules, quality methods, metrics, corrections, field observations
 tests/                pytest checks on the data and the grading rules
 ```
 

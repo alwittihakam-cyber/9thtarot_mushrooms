@@ -2,7 +2,7 @@
 
 All protocols use these definitions, so results can be compared across trials and with the literature.
 
-## Log volume (Smalian's formula)
+## Log volume (Smalian's formula), a covariate
 
 V = L × (A₁ + A₂) / 2, where Aᵢ = π (dᵢ / 2)²
 
@@ -10,26 +10,20 @@ V = L × (A₁ + A₂) / 2, where Aᵢ = π (dᵢ / 2)²
 * V is in cm³. Divide by 1,000 for litres, or by 10⁶ for m³.
 * Record the raw measurements in `logs.csv`, not just V.
 
-## Log dry mass
+## Log moisture, a covariate
 
 Dry mass = fresh mass × (1 − MC), where MC is the moisture content on a wet basis.
 
 * For MC, drill one 8 mm core at the log's mid-length on the day of inoculation, weigh it fresh, oven-dry it at 103 °C to constant mass, and weigh it again.
 * A pin moisture meter is acceptable if it has been calibrated against cores for that wood.
 
-## Yield per log volume
+## Quality and potency
 
-Total fresh fruit-body mass (kg) divided by V (m³), in **kg/m³**. This is the unit the Saga trials use, which makes cross-site comparison possible.
+The primary outcomes, and how to sample and measure them, are in [`quality-methods.md`](quality-methods.md): same-flush, same-stage sampling, the blind panel, texture and shelf life, umami chemistry (EUC) and the per-species potency assays.
 
-## Yield per log mass
+## Fruiting share (a gate, not an outcome)
 
-Fresh mass (g) divided by log fresh mass at inoculation (kg), in **g/kg**. This is the unit the Aichi trials use.
-
-## Biological efficiency (BE)
-
-BE (%) = fresh fruit-body mass ÷ substrate dry mass × 100.
-
-Always state that BE is based on fresh fruit and dry substrate, because conventions differ. For beds, the substrate dry mass is carrot plus kit dry mass, from oven-dried subsamples.
+The share of logs or plots with at least one harvestable fruit body by a date fixed in each protocol. It answers "does this wood work at all?". The project does not weigh harvests as an outcome, and protocols do not compare yield.
 
 ## Days to colonisation (P01)
 
@@ -51,9 +45,9 @@ Before the trial, the scorer re-scores a random 10% of the images at least a wee
 
 Record each competitor that shows fruit bodies, stroma or a coloured zone on the bark or ends, such as *Trichoderma*, *Hypoxylon*, *Diatrype*, *Trametes* or *Schizophyllum*. Give the estimated % of bark surface it covers. Photograph anything that cannot be identified.
 
-## Harvest
+## Harvest record
 
-Weigh fruit bodies trimmed to the commercial standard, on the day of harvest, to 1 g. Grade each harvest: hana donko, A, B or cull. If any fruit bodies are dried, weigh them after drying at 60 °C to constant mass.
+For every harvest, record in `harvests.csv`: date, flush number, maturity stage, days from primordium, the number of caps pooled, cap diameter and cap thickness, and whether the sample was chilled within 1 h. Masses are recorded only where a method needs them (sample portions in `samples.csv`, dry matter % for assays).
 
 ## Environment
 
