@@ -4,7 +4,7 @@
 |---|---|
 | Status | **Proposed, not adopted.** Needs the grower's yes before it is frozen. |
 | Season | Inoculate in spring 2027 (Mar to Apr). A second cohort can follow in autumn 2027. |
-| Builds on | [OBS-01](../docs/observations/OBS-01.md). The pilot fruited to a full harvest by 2026-11-19 (EV0121), and five tasters found it "more meaty" than supermarket eringi in an informal comparison (EV0153). Eringi grown on willow sawdust scored best for taste and texture against birch and corncob (EV0142), so substrate can change eringi quality. Eringi is naturally a weak parasite of Apiaceae roots (EV0116), and carrot is an Apiaceae. |
+| Builds on | [OBS-01](../docs/observations/OBS-01.md). The pilot fruited to a full harvest by 2026-11-19 (EV0121), and five tasters found it "more meaty" than supermarket eringi in an informal comparison (EV0153). Eringi grown on willow sawdust scored best for taste and texture against birch and corncob (EV0142), so substrate can change eringi quality. In nature eringi is associated with Apiaceae roots and acts as a facultative necrotrophic parasite of *Eryngium campestre* (EV0116), and carrot is an Apiaceae. |
 | Outcomes | Culinary quality and chemical potency. Yield is not measured. |
 
 ## 1. Why this trial
