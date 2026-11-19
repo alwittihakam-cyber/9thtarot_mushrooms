@@ -57,6 +57,7 @@ A randomised complete block design. **Blocks are source trees.** Each tree's log
 * **Kit arm:** use a fully colonised block that has not fruited and is less than 2 weeks from purchase. Crumble it into a clean tub, pack each hole level and wax it.
 * **Dowel arm:** hammer in one dowel per hole and wax it.
 * Lay all logs in one randomly mixed stack, with the same shade and the same hand watering. Log every watering in `events.csv`.
+* **Fan:** manage the fan the same way for both arms during each flush, following the grower's staged method ([MET-01](../docs/observations/MET-01.md)): pointed away in the early stage, directly at the caps in mid-stage, and away again late. Fan placement must not favour either arm, because hana donko share is an outcome. Log fan direction changes in `events.csv`.
 * **Fruiting:** natural flushes only. Sample quality from the **first natural autumn or spring flush** in which at least 6 logs per arm fruit.
 
 ## 6. Outcomes

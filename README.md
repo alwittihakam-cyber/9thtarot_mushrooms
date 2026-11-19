@@ -56,6 +56,10 @@ That is one bed, no controls, and a tasting against supermarket eringi of a diff
 
 **Paper:** [King oyster fruiting outdoors from fresh, unsterilised buried carrot (preprint, PDF)](paper/eringi-fresh-carrot.pdf)
 
+## Grower's methods
+
+* [MET-01](docs/observations/MET-01.md) **Hana donko shiitake by fan direction.** The fan points away from the fruit bodies in the early stage, directly at the caps in mid-stage, and away again late. It produced hana donko on 3 of 3 flushes. It has no untreated comparison yet (E4).
+
 ## Trials (pre-registered)
 
 | | Question | Primary outcomes | Status |
