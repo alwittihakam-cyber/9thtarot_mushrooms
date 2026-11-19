@@ -16,6 +16,7 @@
 | 2026-11-11 | White primordia and young pins came up through the casing |
 | by 2026-11-19 | Mature fruit bodies were harvested, filling a full tray |
 
+![Early pins: a cluster of white primordia with tan cap tips breaking through the casing (about 2026-11-11; exact date not recorded)](OBS-01/early-pins.jpg)
 ![Cap with radial streaks, in the bed](OBS-01/2026-11-19_cap-streaks-in-bed.jpg)
 ![Decurrent gills and wavy margin](OBS-01/2026-11-19_gills-decurrent.jpg)
 ![Harvest tray](OBS-01/2026-11-19_harvest-tray.jpg)
