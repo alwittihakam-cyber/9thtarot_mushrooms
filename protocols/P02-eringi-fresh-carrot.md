@@ -29,7 +29,7 @@ OBS-01 gives three things to test: it fruited, it tasted meatier, and the caps l
 |---|---|
 | Arms | **A** carrot + kit · **B** kit only, with the same kit mass at the same depth · **C** carrot only, with no inoculum |
 | Plot | 50 × 50 cm. 10 fresh carrots, buried 5 cm deep. Cased with the pilot's straw + leaf-litter mix at 5 cm. |
-| Inoculum | One kit lot, crumbled and split by weight: 30 g per plot in arms A and B |
+| Inoculum | One kit lot, crumbled and split by weight: 30 g per plot in arms A and B. Kit pieces keep the main comparison (carrot vs no carrot) free of genotype differences. The grower's own beds now use spore slurry and later liquid culture (OBS-01); see §6b. |
 | Blocks | Rows across the shade gradient, each holding one plot of each arm. **12 rows = 36 plots.** |
 | Commercial reference | Same strain as the kit, bought fresh within 2 days of each tasting session, from one shop |
 | Sampling | First flush only. Harvest when the cap margin is still inrolled and the cap is ≤ 6 cm. That catches the pilot's form before the caps flatten (`docs/quality-methods.md` §1). |
@@ -68,6 +68,16 @@ OBS-01 gives three things to test: it fruited, it tasted meatier, and the caps l
 * **Prediction:** if light or drying causes the streaks (OBS-01, hypotheses 1 and 2), covered halves will score lower.
 * **Analysis:** an ordinal mixed model, `streak ~ cover + (1 | row)`. Exploratory.
 
+## 6b. Inoculum lineage sub-study: does carrot select an adapted eringi?
+
+The grower now inoculates carrot beds with a multispore slurry and plans to move to liquid culture (OBS-01, method change 2026-11-19). That makes a second question testable: **does growing eringi on carrot select a genotype that does better on carrot?**
+
+* **Lines.** **G0:** the original kit strain, as liquid culture made from the kit block. **Carrot-selected:** liquid culture from a tissue clone of the best fruit body from the slurry beds (chosen before this trial on colonisation and fruiting only, without tasting, and documented with photos). Both lines are made the same way and used at the same dose.
+* **Design.** 6 extra rows, each with one carrot plot per line, inoculated by the same watering-globe method, randomised with the same script. Plot size, carrots and casing as in §3.
+* **Hypotheses (exploratory).** The carrot-selected line differs from G0 on (a) carrot colonisation at day 60, (b) blind umami/meaty rating and (c) EUC and ergothioneine.
+* **Why not slurry vs liquid culture directly?** Slurry beds are a mix of unknown, changing genotypes, so a difference would have no fixed cause. The comparison that answers "did carrot adapt it?" is selected clone versus starting strain, both as liquid culture.
+* **Analysis.** Same models as §7, with `line` in place of `arm`; 6 replicates per line, so only large differences are detectable (0.79 at 1.3× for assays if CV ≈ 15%).
+
 ## 7. Analysis plan
 
 * **H1, H3:** `rating ~ arm + serving_position + (1 | panellist)`, with contrasts A − B (primary) and A − commercial (secondary).
@@ -85,4 +95,5 @@ Tag `prereg/P02-v1` and register on OSF before inoculation.
 
 | Date | Deviation | Reason |
 |---|---|---|
+| 2026-11-19 | Grower switched own carrot beds to spore slurry via watering globes, liquid culture to follow. Added §6b (carrot-selected clone vs G0 kit strain). Main arms keep kit pieces. | Method change in the pilot; recorded before any P02 data |
 | 2026-11-19 | Rebuilt around culinary quality and potency, using the grower's "meatier" note as the hypothesis; yield removed | Project priorities, set before any data |

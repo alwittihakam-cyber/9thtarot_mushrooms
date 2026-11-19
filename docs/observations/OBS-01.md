@@ -42,6 +42,22 @@ Protocol P02 tests 1 and 2 with a shade and humidity cover (§P02.6). Some of th
 
 This is one taster, comparing against memory, who knew which mushroom was which. It is **a hypothesis, not a finding**. Protocol P02 tests it blind, against eringi from kit pieces alone and against commercial eringi of the same strain. It also tests it chemically, through glutamate, 5′-GMP and EUC.
 
+## Method change from 2026-11-19: spore slurry, then liquid culture
+
+As of 2026-11-19 the grower inoculates carrots differently. **Watering globes** push a **spore slurry** into the buried carrots. The aim is for the eringi population to **adapt to carrot**. Later the inoculum will be a **liquid culture**.
+
+This is a real change in what is being grown, not only in how it is delivered:
+
+* **Kit pieces** (the 2026-11 pilot) carry one strain, a single clone of the kit's dikaryon.
+* **A spore slurry** carries many genetically different spores. *P. eryngii* is heterothallic, so spores must germinate and mate in the carrot to give new dikaryons. Each fruiting patch may be a **new genotype**, not the kit strain. Selection can only act on that variation over repeated rounds, by choosing which fruit bodies supply the next slurry or culture.
+* **A liquid culture** fixes one genotype again. If it is started from tissue of the best carrot-grown fruit body (a tissue clone), it captures whatever the slurry rounds selected.
+
+What follows for interpretation:
+
+* A taste or morphology difference from slurry-grown eringi may come from **genotype**, not from carrot. Whether slurry beds are compared with kit beds or with commercial eringi, that confound has to be named.
+* "Adapted to carrot" is a hypothesis. It can be tested by growing the **carrot-selected clone** and the **original kit strain** side by side on carrot and comparing colonisation, fruiting, taste and potency. That comparison is now in P02 (§6b).
+* **Record for every bed:** inoculum type (kit / slurry / LC), the source fruit body for each slurry or culture (photo, date, bed), spore print or slurry density if measured, and the generation number (kit = G0, first slurry from carrot-grown caps = G1, …). Use `events.csv`, and keep one spore print or tissue sample from each source fruit body.
+
 ## What it does and does not show
 
 * **It shows** that eringi can complete fruiting outdoors from kit pieces buried with fresh carrot under a straw and leaf casing. That matters, because Aichi's attempt to grow eringi on six kinds of log gave no fruit (EV0032–EV0037).
